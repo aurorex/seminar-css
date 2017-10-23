@@ -20,11 +20,11 @@ body{
 
 li{
   display: inline;
-  list-style: none;
+  list-style: none;/*quitar las viñetas de la  etiqueta "li"*/
 }
 
 li a {
-  color: inherit;
+  color: inherit; /* li heredará el color del body*/
   text-decoration: none;
 
 }
@@ -35,9 +35,9 @@ header{
 
 nav{
   position: absolute;
-  right: 5%;/*derecha un 5% del elemento padre*/
-  top: 50%;
-  transform: translateY(-50%);
+  right: 5%;/* espacio a la derecha (5% del elemento padre)*/
+  top: 50%;/*mitad del header*/
+  transform: translateY(-50%);/*-50% del tamaño del elemento nav*/
 }
 
 section{
@@ -47,5 +47,34 @@ section{
 div{
   display: inline-block;
   width: 33%;
-  
+
+}
+
+span{
+  font-size: 60px;
+}
+
+body section:last-child{
+  margin:30px 50px 0 50px ;
+}
+
+img[alt="laboratoria"]{
+  width: 120px;
+}
+
+button{
+  background-color:#f9a91a ;
+  border: 0;
+  border-radius: 5px;
+  color:#fff;
+  padding: 10px;
+  font-weight: 600px;
+}
+
+.box-header ul li {/*selectores descendientes*/
+  margin:0 15px;
+}
+
+span:hover, .box-header ul li:hover{
+  color: #f9a91a;
 }
